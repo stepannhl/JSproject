@@ -1,0 +1,90 @@
+.container{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#clock {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 25rem;
+    background: #0d3b66;
+    color: #f4d35e;
+    text-align: center;
+    line-height: 25rem;
+    font-size: 8rem;
+}
+#mini_clock {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    color: #0d3b66;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 5rem;
+}
+
+.empty_image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    background: #f4d35e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 25%);
+}
+
+.right{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+
+}
+
+.right .title{
+    font-size: 5rem;
+    color: #f4d35e;
+
+}
+
+.right .info{
+    font-size: 1.25rem;
+}
+
+.right .form{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.right .form input {
+    border-radius: .5rem;
+    border: 2px solid #0d3b66;
+    outline: none;
+    appearance: none;
+    color: #000000;
+    padding: .5rem;
+    transition: all .2s ease;
+}
+
+.right .form input:focus {
+    border: 2px solid #f4d35e;
+}
+
+.right .form input.error{
+    border: 2px solid red;
+}

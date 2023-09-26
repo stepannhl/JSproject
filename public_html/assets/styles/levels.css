@@ -1,0 +1,36 @@
+.levels_container{
+    width: min(60%, 600px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header p, header a{
+    text-align: center;
+}
+
+.playground{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#timer{
+    font-size: 2rem;
+    z-index: 3;
+    margin-top: 1rem;
+    background: #FFF;
+}

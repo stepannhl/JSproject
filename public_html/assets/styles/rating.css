@@ -1,0 +1,13 @@
+.rating_container{
+    width: min(60%, 850px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
